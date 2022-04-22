@@ -29,3 +29,11 @@ JavaScript 高级工程师学习之路。
 ### 词法环境（Lexical Environment）
 
 **词法环境**是指，变量或函数所处环境，在创建时就已经确定，其决定了运行时变量或函数可访问的**词法作用域**。在运行时，由于使用`Call Stack`结构调度执行，因此，最歪出词法环境即全局执行上下文对象被压入栈底，函数调用时被逐一推入栈中，然后重新创建执行上下文并执行。函数内部作用域（即函数内部变量、函数所处词法环境）中声明的变量、函数会在运行时重新绑定到执行上下文，此时的执行上下文对象指向函数调用者。
+
+## IIFE
+
+IIFE 即立即执行函数。
+
+## this
+
+> In javascript our lexical scope (available data + variables where the function was defined) determines our available variables. Not where the function is called (dynamic scope).
