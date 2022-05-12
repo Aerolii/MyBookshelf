@@ -37,3 +37,11 @@ IIFE 即立即执行函数。
 ## this
 
 > In javascript our lexical scope (available data + variables where the function was defined) determines our available variables. Not where the function is called (dynamic scope).
+
+### == 和 ===
+
+== 比较值，=== 比较值和类型
+
+### TypeScript
+
+TypeScript 主要表现为静态类型检查。通过静态类型检查从而减少运行时错误，但更好的方式应该是通过测试（单元测试）覆盖，从而减少运行时错误。
