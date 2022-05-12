@@ -45,3 +45,46 @@ IIFE 即立即执行函数。
 ### TypeScript
 
 TypeScript 主要表现为静态类型检查。通过静态类型检查从而减少运行时错误，但更好的方式应该是通过测试（单元测试）覆盖，从而减少运行时错误。
+
+### JavaScript 中 函数 是一等公民
+
+函数是一等公民表现在：函数可以作为变量值；函数可以作为参数；函数可以作为返回值。
+
+1. 函数作为变量值（即函数表达式）
+
+```js
+var fn = function() { console.log(123) }
+```
+
+2. 函数作为参数
+
+```js
+function fnArg(fn) { fn && fn(123) }
+```
+
+3. 函数作为返回值
+
+```js
+function returnFn() { return function() { console.log(123) } }
+```
+
+函数具有属性、方法。
+
+属性： 
+
+- length
+- name
+- prototype
+
+方法：
+
+- apply
+- bind
+- call
+- constructor
+- hasOwnProperty
+- isPrototypeOf
+- toString
+- valueOf
+
+#### [高阶函数示例](./7_HOF_Function)
